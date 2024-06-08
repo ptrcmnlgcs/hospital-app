@@ -2,14 +2,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginPage from '../views/LoginView.vue'
 import RegisterPage from '../views/RegisterView.vue'
-import HomePage from '../components/HomePage.vue'
+import NavigationBar from '../components/NavigationBar.vue'
 
 
 const routes = [
   { path: '/', component: LoginPage, name: 'login' },
   { path: '/register', component: RegisterPage, name: 'register' },
   {
-    path: '/home', component: HomePage, name: 'home',
+    path: '/home', component: NavigationBar, name: 'home',
     beforeEnter: (to, from, next) => {
       // check if user is logged in and redirect to login page if not
       if (localStorage.getItem('token')) {
