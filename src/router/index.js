@@ -3,6 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LoginPage from '../views/LoginView.vue'
 import RegisterPage from '../views/RegisterView.vue'
 import NavigationBar from '../components/NavigationBar.vue'
+import AddPatient from '../components/AddPatient.vue';
+import EditPatient from '../components/EditPatient.vue';
+import AdminViewPatient from '../components/AdminViewPatient.vue';
+import ViewOwnRecords from '../components/ViewOwnRecords.vue';
+import EditProfile from '../components/EditProfile.vue';
 
 
 const routes = [
@@ -19,6 +24,11 @@ const routes = [
       }
     }
   },
+  { path: '/add-patient', name: 'AddPatient', component: AddPatient },
+  { path: '/edit-patient', name: 'EditPatient', component: EditPatient },
+  { path: '/admin-view-patient', name: 'AdminViewPatient', component: AdminViewPatient },
+  { path: '/view-own-records', name: 'ViewOwnRecords', component: ViewOwnRecords },
+  { path: '/edit-profile', name: 'EditProfile', component: EditProfile },
   {
     path: '/logout',
     name: 'logout',

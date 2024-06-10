@@ -2,11 +2,11 @@
   <nav class="navbar">
     <div class="container d-flex justify-content-end">
       <ul class="nav">
-        <li class="nav-item"><router-link to="/profile" class="nav-link">Profile</router-link></li>
+        <li class="nav-item"><router-link to="/edit-profile" class="nav-link">Profile</router-link></li>
         <li class="nav-item"><router-link to="/doctor" class="nav-link">Doctor</router-link></li>
-        <li class="nav-item"><router-link to="/patient" class="nav-link">Patient</router-link></li>
+        <li class="nav-item"><router-link to="/admin-view-patient" class="nav-link">Patient</router-link></li>
         <li class="nav-item"><router-link to="/appointment" class="nav-link">Appointment</router-link></li>
-        <li class="nav-item"><router-link to="/medical-records" class="nav-link">Medical Records</router-link></li>
+        <li class="nav-item"><router-link to="/view-own-records" class="nav-link">Medical Records</router-link></li>
         <li class="nav-item"><router-link to="/logout" class="nav-link">Logout</router-link></li>
       </ul>
     </div>
